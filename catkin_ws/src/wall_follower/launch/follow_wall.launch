@@ -1,0 +1,8 @@
+<launch>
+  <arg name="scan_topic" default="dumpster/laser/scan"/>
+  <arg name="robot_actuation_topic" default="cmd_vel"/>
+    <node pkg="wall_follower" type="follow_wall.py" name="wall_follower_py_node" output="screen">
+      <remap from="BaseScan" to="$(arg scan_topic)"/>
+      <remap from="cmd_vel" to="$(arg robot_actuation_topic)"/>
+    </node>
+</launch>
