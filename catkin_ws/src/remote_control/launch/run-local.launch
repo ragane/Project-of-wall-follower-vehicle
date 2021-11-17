@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find raspicam_node)/launch/camera_module_v2_640x480_30fps_autocapture.launch" />
+    <node name="keyboard_driver" pkg="remote_control" type="keyboard_driver.py" />
+    <node name="keys_to_twist" pkg="remote_control" type="keys_to_twist.py" />
+    <node name="motors" pkg="remote_control" type="motors.py" />
+    <node name="vision" pkg="remote_control" type="vision.py" />
+</launch>
