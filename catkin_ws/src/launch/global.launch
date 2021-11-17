@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find remote_control)/launch/run-local.launch" />
+    <include file="$(find rplidar_ros)/launch/rplidar_a3.launch" />
+    <include file="$(find hector_slam_launch)/launch/SLAM.launch" />
+</launch>
