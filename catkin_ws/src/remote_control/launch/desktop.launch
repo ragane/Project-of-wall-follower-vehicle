@@ -1,4 +1,0 @@
-<launch>
-    <node name="keyboard_driver" pkg="remote_control" type="keyboard_driver.py" />
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find remote_control)/rviz/config.rviz" />
-</launch>
